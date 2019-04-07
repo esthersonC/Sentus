@@ -4,10 +4,6 @@
 		<title>Estherson Celestin</title>
 	<head>
 		<body style =
-			h1 {
-  font-family: "Georgia", serif;
-  font-size: 2.5em;
-}
 
 h2 {
   font-family: "Georgia", serif;
@@ -18,7 +14,14 @@ p {
   font-family: "Times New Roman", Times, serif;
   font-size: 0.875em;
 }>
-			<h1 style =>Welcome to the World of Me</h1>
+			<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+			<img src="/media/file_001.png" alt="Me">
+			<h1> <script>
+                               var c = document.getElementById("myCanvas");
+                               var ctx = c.getContext("2d");
+                               ctx.font = "30px Arial";
+                               ctx.strokeText("Welcome to the World of Me",10,50);
+                       </script></h1>
 		          <p> My Name is Estherson Celestin, but I usually go by my middle name Lukas. I am a French and Haitian man with some other 
 			nationalities mixed in. I enjoy mythology, comics, music (spelled as mysik), and reading. I also used to be really into 
 			weapons and still have some at my home.
