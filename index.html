@@ -25,19 +25,15 @@ p {
      p { color: white;}
 </style>
 			<body>
-			<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
-			<img src="/Sentus/media/File_001.png" align="right" width="240" height="427">
-			<script>
-                              var c = document.getElementById("myCanvas");
+			<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-// Create gradient
-var grd = ctx.createRadialGradient(0,0,200,0);
-grd.addColorStop(0," blue");
-grd.addColorStop(1,"orange");
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10,10,150,80);
-                       </script>
+ctx.font = "30px Arial";
+ctx.fillText("Hello World",10,50);
+</script>
 		<h1>
 			Welcome to the world of Me
 		</h1>
