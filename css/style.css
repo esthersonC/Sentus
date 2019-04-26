@@ -22,14 +22,10 @@ li a {
 }
 
 li a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-li a:hover:not(.active) {
   background-color: #008080;
   color: white;
 }
+
 
 h2 {
   font-family: "Georgia", serif;
